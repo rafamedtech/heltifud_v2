@@ -17,7 +17,7 @@ export function NavButton() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" className="border-green-600 bg-green-600">
+        <Button className="border-green-600 bg-green-600">
           <MenuIcon />
         </Button>
       </DropdownMenuTrigger>

@@ -3,11 +3,8 @@ import { Montserrat } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import TheHeader from "@/components/TheHeader";
-import Link from "next/link";
 import LocationDialog from "@/components/LocationDialog";
 import Copyright from "@/components/Copyright";
-import { Button } from "@/components/ui/button";
-import { MenuIcon } from "lucide-react";
 import { NavButton } from "@/components/NavButton";
 
 const montserrat = Montserrat({
@@ -29,7 +26,7 @@ export default function RootLayout({
     <html lang="es" suppressHydrationWarning>
       <body className={`${montserrat.variable} antialiased`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <section className="fixed right-4 bottom-4">
+          <section className="fixed right-4 bottom-4 md:hidden">
             <NavButton />
           </section>
           <LocationDialog />
