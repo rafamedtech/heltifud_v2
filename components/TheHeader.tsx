@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ModeToggle } from "@/components/ModeToggle";
-import { RocketIcon, ListCollapse } from "lucide-react";
+import { RocketIcon } from "lucide-react";
+import { NavMenu } from "./NavMenu";
 
 function TheHeader() {
   return (
@@ -12,27 +13,10 @@ function TheHeader() {
           {/* <span className='text-xl font-bold text-green-600'>Heltifud Meal Preps</span> */}
         </Link>
 
-        <nav className="hidden space-x-6 md:flex">
-          <Link
-            href="#features"
-            className="text-background dark:text-foreground hover:text-green-600"
-          >
-            ¿Cómo funciona?
-          </Link>
-          <Link
-            href="#pricing"
-            className="text-background dark:text-foreground flex gap-2 hover:text-green-600"
-          >
-            <ListCollapse />
-            Planes semanales
-          </Link>
-          <Link
-            href="#menu"
-            className="text-background dark:text-foreground hover:text-green-600"
-          >
-            Menu
-          </Link>
+        <nav className="hidden md:flex">
+          <NavMenu />
         </nav>
+
         <section className="flex items-center gap-4">
           <ModeToggle />
           <Link
