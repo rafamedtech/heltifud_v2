@@ -31,7 +31,7 @@ export default function RootLayout({
           </section>
           <LocationDialog />
           <TheHeader />
-          <main className="min-h-screen">{children}</main>
+          <main className="min-h-screen px-4">{children}</main>
           <footer className="bg-foreground">
             <section className="py-4">
               <section className="mb-2 flex justify-center">

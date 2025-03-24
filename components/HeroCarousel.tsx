@@ -38,7 +38,7 @@ export default function HeroCarousel() {
   return (
     <Carousel
       plugins={[plugin.current]}
-      className="w-full px-8 md:max-w-sm"
+      className="w-full md:max-w-sm"
       onMouseEnter={plugin.current.stop}
       onMouseLeave={plugin.current.reset}
       opts={{ loop: true }}

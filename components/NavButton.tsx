@@ -26,9 +26,9 @@ export function NavButton() {
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
           {navLinks.map(({ id, href, label }) => (
-            <DropdownMenuItem key={id}>
-              <Link href={href}>{label}</Link>
-            </DropdownMenuItem>
+            <Link href={href} key={id}>
+              <DropdownMenuItem>{label}</DropdownMenuItem>
+            </Link>
           ))}
         </DropdownMenuGroup>
       </DropdownMenuContent>

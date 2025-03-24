@@ -5,7 +5,7 @@ import { Clipboard, BookText } from "lucide-react";
 const TheHero = () => {
   return (
     <section className="container mx-auto flex w-full flex-col-reverse items-center justify-center gap-8 py-8 md:flex-row md:gap-12 md:py-20">
-      <div className="px-8 md:w-1/2">
+      <div className="md:w-1/2">
         <h1 className="mb-4 text-4xl font-bold md:text-5xl">
           Comidas saludables, directo a tu puerta
         </h1>
